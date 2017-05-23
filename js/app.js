@@ -16,12 +16,12 @@ $('input').keyup(function(e) {
 		save(nombreTarea);
 		var myarray=getTodos();
 		tareas.id= myarray.indexOf(nombreTarea);
-		//save(tareas.id);
+		//save(trabajo de Blas);
 		var data= $('<h4><input class="check" type="checkBox">').append(nombreTarea)
 		.append('<span class="span"><input type="button" style="float:right" class="btn btn-danger" value="eliminar" onclick="eliminar('+tareas.id+',1)"></input></span>');
-		//guardar informacion en el localStorage
+		//guardar informacion en el localStorage de blas
 		$('.todo-list').append($('<div>').append(data)).append('<br>');
-		//$('.todo-list').append($('<div>').append(''));
+		//$('.todo-list').append($('<div>').append('BLas'));
         console.log(myarray.indexOf(nombreTarea));
 
 
@@ -74,6 +74,7 @@ function eliminar(id,cant){
 function borrar(){
  /*var miArray = getTodos();
  texto = miArray[1];
+ var Blas = {trabajo}
  var nro = miArray.indexOf(texto);
  console.log(nro);*/
  localStorage.todo="";
